@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[test...]]>
+    </line>
+    <line>
+      <![CDATA[Data:UserName]]>
+    </line>
+    <line>
+      <![CDATA[Row:1]]>
+    </line>
+    <line>
+      <![CDATA[Photo:./photo/Thu Sep 27 11_44_15 IST 2018.png]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="166" started-at="2018-09-27T05:58:40Z" finished-at="2018-09-27T05:58:40Z">
+  <suite name="Default suite" duration-ms="19742" started-at="2018-09-27T06:13:58Z" finished-at="2018-09-27T06:14:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="166" started-at="2018-09-27T05:58:40Z" finished-at="2018-09-27T05:58:40Z">
+    <test name="Default test" duration-ms="19742" started-at="2018-09-27T06:13:58Z" finished-at="2018-09-27T06:14:18Z">
       <class name="script.TestDemo">
-        <test-method status="PASS" signature="testA()[pri:0, instance:script.TestDemo@5e3a8624]" name="testA" duration-ms="124" started-at="2018-09-27T05:58:40Z" finished-at="2018-09-27T05:58:40Z">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.TestDemo@4dfa3a9d]" name="openApp" is-config="true" duration-ms="14458" started-at="2018-09-27T06:13:58Z" finished-at="2018-09-27T06:14:13Z">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="testA()[pri:0, instance:script.TestDemo@4dfa3a9d]" name="testA" duration-ms="2886" started-at="2018-09-27T06:14:13Z" finished-at="2018-09-27T06:14:16Z">
+          <reporter-output>
+            <line>
+              <![CDATA[test...]]>
+            </line>
+            <line>
+              <![CDATA[Data:UserName]]>
+            </line>
+            <line>
+              <![CDATA[Row:1]]>
+            </line>
+            <line>
+              <![CDATA[Photo:./photo/Thu Sep 27 11_44_15 IST 2018.png]]>
+            </line>
+          </reporter-output>
         </test-method> <!-- testA -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:script.TestDemo@4dfa3a9d]" name="closeApp" is-config="true" duration-ms="2361" started-at="2018-09-27T06:14:16Z" finished-at="2018-09-27T06:14:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
       </class> <!-- script.TestDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

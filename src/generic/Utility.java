@@ -6,10 +6,7 @@ import java.io.FileOutputStream;
 import java.util.Date;
 import java.util.Properties;
 
-import javax.swing.plaf.FileChooserUI;
-
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.OutputType;
