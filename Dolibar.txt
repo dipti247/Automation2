@@ -1,0 +1,61 @@
+----------------------------------------------------------------------------------------------
+URL for dolibar: (IP will change)
+
+http://192.168.100.128/dolibarr-3.3.1/htdocs/
+----------------------------------------------------------------------------------------------
+POM class for dolibar
+package page;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage {
+	@FindBy(id="username")
+	private WebElement unTB;
+	
+	@FindBy(id="password")
+	private WebElement pwTB;
+	
+	@FindBy(xpath="//input[@type='submit']")
+	private WebElement connectBTN;
+	
+	public LoginPage(WebDriver driver){
+		PageFactory.initElements(driver,this);
+	}
+	
+	public void setUserName(String un){
+		unTB.sendKeys(un);
+	}
+	
+	public void setPassword(String pw){
+		pwTB.sendKeys(pw);
+	}
+	
+	public void clickConnect(){
+		connectBTN.click();
+	}
+	
+	
+}
+
+---------------------------------------------------------------------------------------------------------------------
+Test Class for dolibar
+
+package script;
+
+import org.testng.annotations.Test;
+import generic.BaseTest;
+import page.LoginPage;
+
+
+public class DemoA extends BaseTest{
+	@Test
+	public void testA(){	
+		LoginPage l=new LoginPage(driver);
+		l.setUserName("admin");
+		l.setPassword("admin");
+		l.clickConnect();
+	}
+}
